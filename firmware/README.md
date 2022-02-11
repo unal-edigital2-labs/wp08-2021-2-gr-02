@@ -158,27 +158,23 @@ Cuando todos los infrarrojos se encuentren activos, el robot entiende que está 
 	showD(d);
 ```
 
-De donde se ejecuta la siguiente sección que se encarga de comparar las mediciones de los registros y decidir qué dirección debe tomar el robot. Cuando elije una dirección, la anuncia por la bocina del MP3:
+De donde se ejecuta la siguiente sección que se encarga de comparar las mediciones de los registros y decidir qué dirección debe tomar el robot.
 
 ``` c
 //Rotación
 //d[0] derecha - d[1] centro - d[2] izquierda 
 if(d[0] >= 35){
-	mp3(1);
 	wheels_cntrl_state_write(2);
 	delay_ms(400);
 	orientation = orientation + 1;
 }else if(d[0] < 35 && d[1] >= 35){
 	wheels_cntrl_state_write(0);
 	delay_ms(200);
-	mp3(3);
 }else if(d[0] < 35 && d[1] < 35 && d[2] >= 35){
-	mp3(2);
 	wheels_cntrl_state_write(1);
 	delay_ms(400);
 	orientation = orientation - 1;
 }else{			
-	mp3(4);
 	wheels_cntrl_state_write(5);
 	delay_ms(200);
 	wheels_cntrl_state_write(4);
@@ -187,7 +183,7 @@ if(d[0] >= 35){
 }
 ```
 
-La variable orientation define en que dirección se esta moviendo el carro, de esta manera se puede establecer cual valor de la matriz se coloca en 1, dado que solo hay 4 direcciones, cuando realiza un giro completo se reinicia la dirección:
+La variable orientation define en que dirección se está moviendo el carro, de esta manera se puede establecer cual valor de la matriz se coloca en 1, dado que solo hay 4 direcciones, cuando realiza un giro completo se reinicia la dirección:
 
 ``` c
 if(orientation >= 4)
@@ -196,14 +192,5 @@ else if(orientation < 0)
 	orientation = orientation + 4;
 ```
 
-Finalmente se actualizan los datos de la matriz para ser enviada por bluetooth. Ejemplo de los datos que se envían:
-
-
-
-
-Cuando se reciben los datos, se pueden mostrar de forma visual por medio de algún programa que interprete los strings que se obtienen por bluetooth, en este caso, se uso el lenguaje de programación Processing, de forma que el laberinto se ve de la siguiente manera:
-
-
-![Alt text](/images/labP.png)
 
 
