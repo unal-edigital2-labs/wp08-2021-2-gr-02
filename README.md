@@ -10,6 +10,13 @@ En este trabajo se se presenta el proyecto de la asignatura Electrónica Digital
 
 A continuación se muestra la arquitectura básica que tendrá el SoC del proyecto.
 
-##SoC
+## SoC
 
 [![Captura-de-pantalla-de-2022-02-10-20-57-44.png](https://i.postimg.cc/XqCc03yv/Captura-de-pantalla-de-2022-02-10-20-57-44.png)](https://postimg.cc/1VyNpkBx)
+
+## [Módulos](https://github.com/unal-edigital2-labs/wp08-2021-2-gr-02/tree/main/module) 
+
+-Servomotor
+-Ultrasonido
+-Infrarojos
+-Motores
