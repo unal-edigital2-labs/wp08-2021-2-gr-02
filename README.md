@@ -16,7 +16,8 @@ A continuación se muestra la arquitectura básica que tendrá el SoC del proyec
 
 ## [Módulos](https://github.com/unal-edigital2-labs/wp08-2021-2-gr-02/tree/main/module) 
 
--Servomotor
--Ultrasonido
--Infrarojos
--Motores
+- Servomotor
+- Ultrasonido
+- Infrarojos
+- Motores
+
