@@ -1,5 +1,6 @@
 1. [ Ultrasonido. ](#us)
 2. [ Servomotor. ](#servo)
+3. [ Motores. ](#motor)
 
 
 <a name="us"></a>
@@ -141,3 +142,11 @@ y se añade el submodulo e importan los pines
 		SoCCore.add_csr(self,"PWMUS_cntrl")
 		self.submodules.PWMUS_cntrl = PWMUS.servoUS(platform.request("servo"))
 ```
+<a name="motor"></a>
+
+## Motores
+
+# Mapa de memoria 
+| Registro | Posición | Tipo |
+|-------|-------|---------|
+|motores |	0x82005800 |rw|
