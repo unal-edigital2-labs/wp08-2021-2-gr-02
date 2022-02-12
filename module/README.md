@@ -92,6 +92,46 @@ En el archivo buildSoCproject se crea el submodulo y se importan los pines de en
 ```
 
 <a name="servo"></a>
+
 ## Servomotor
 
-El servomotor es el encargado de girar al ultrasonido para que este pueda hacer las lecturas del mapa, 
+El servomotor es el encargado de girar al ultrasonido para que este pueda determinar la ubicación de las paredes, dado que los tres movimientos que debe realizar son hacia la derecha, hacia el frente y hacia la izquierda, para esto se establecen siertos valores de pwm en la [hoja de especificaciones](../datasheets/sg90_datasheet.pdf) del fabricante en la cual se indica que la señal pwm debe ser de 50 Hz y para la posicion a 0° debe tener un ancho de pulso de 1 ms, para 180° el ancho debe ser de 2 ms. De este modo, el código implementado en verilog es el siguiente
+
+``` verilog
+always@(posedge clk)begin
+	contador = contador + 1;
+	if(contador =='d1_000_000) begin
+	   contador = 0;
+	end
+	
+	case(pos)
+        2'b00:  servo = (contador < 'd50_000) ? 1:0;
+        
+        2'b01:  servo = (contador < 'd150_000) ? 1:0;
+        
+        2'b10:  servo = (contador < 'd250_000) ? 1:0;
+        
+        default:servo = (contador < 'd50_000) ? 1:0;
+    endcase
+
+end
+```
+
+En python se importa el modulo donde se maneja el registro pos como Storage para que se pueda editar desde C, y la señal servo como una conexion externa en la FPGA.
+
+``` python
+class servoUS(Module, AutoCSR):
+    def __init__(self, servo):
+            self.clk = ClockSignal()
+            self.pos = CSRStorage(2)
+            self.servo = servo
+
+```
+
+y se añade el submodulo e importan los pines
+
+``` python
+#PWMUS
+		SoCCore.add_csr(self,"PWMUS_cntrl")
+		self.submodules.PWMUS_cntrl = PWMUS.servoUS(platform.request("servo"))
+```
