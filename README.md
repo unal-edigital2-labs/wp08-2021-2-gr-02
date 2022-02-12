@@ -17,6 +17,7 @@ A continuación se muestra la arquitectura básica que tendrá el SoC del proyec
 ## Mapa de Memoria
 
 | csr_base | Dirección |
+| ------------- | ------------- |
 |leds   |	0x82000000 |
 |switchs |	0x82000800 |
 |buttons |	0x82001000 |
