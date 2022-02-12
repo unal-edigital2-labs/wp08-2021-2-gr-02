@@ -39,10 +39,14 @@ A continuación se muestra la arquitectura básica que tendrá el SoC del proyec
 
 ## [Módulos](https://github.com/unal-edigital2-labs/wp08-2021-2-gr-02/tree/main/module) 
 
+En esta sección se muestran los periféricos utilizados, así como sus respectivos drivers, el mapa de memoria de cada uno y la implementación en el SOC.
+
 - Servomotor
 - Ultrasonido
 - Infrarojos
 - Motores
 
 ## [Firmware](https://github.com/unal-edigital2-labs/wp08-2021-2-gr-02/tree/main/firmware)
+
+En esta sección se presenta el código implementado en software para realizar el test de cada uno de los periféricos.
 

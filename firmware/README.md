@@ -46,7 +46,7 @@ static void PWMUS_test(void)
 ```
 
 <a name="w"></a>
-##Motores
+## Motores
 
 Se realiza la prueba de funcionamiento de los motores evidenciando que la tensión de 5 voltios no es suficiente para mover ambos, por lo tanto se procede a usar un adaptador de 12 voltios con el cual el resultado es satisfactorio.
 
@@ -90,7 +90,7 @@ static void w_test(void){
 ```
 
 <a name="ir"></a>
-##Infrarojos
+## Infrarojos
 
 Se implementa el código el cual muestra en pantalla un arreglo de cinco bits que indican 1 cuando se detecta un objeto y un 0 cuando no.
 
