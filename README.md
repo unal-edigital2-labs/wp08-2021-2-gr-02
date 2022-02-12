@@ -12,7 +12,7 @@ A continuación se muestra la arquitectura básica que tendrá el SoC del proyec
 
 ## SoC
 
-[![Captura-de-pantalla-de-2022-02-10-20-57-44.png](https://i.postimg.cc/XqCc03yv/Captura-de-pantalla-de-2022-02-10-20-57-44.png)](https://postimg.cc/1VyNpkBx)
+[![Captura-de-pantalla-de-2022-02-11-21-08-48.png](https://i.postimg.cc/9Mc36qFm/Captura-de-pantalla-de-2022-02-11-21-08-48.png)](https://postimg.cc/R3pbfhHy)
 
 ## [Módulos](https://github.com/unal-edigital2-labs/wp08-2021-2-gr-02/tree/main/module) 
 
