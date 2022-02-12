@@ -1,6 +1,7 @@
 1. [ Ultrasonido. ](#us)
 2. [ Servomotor. ](#servo)
 3. [ Motores. ](#motor)
+4. [ InfraRojos. ](#ir)
 
 
 <a name="us"></a>
@@ -230,3 +231,16 @@ right = Cat(*[platform.request("right", i) for i in range(2)])
 left = Cat(*[platform.request("left", i) for i in range(2)])
 self.submodules.wheels_cntrl = wheels.wheels(right, left)
 ```
+<a name="ir"></a>
+
+## Infrarojos
+
+# Mapa de memoria
+
+| Registro | Posición | tipo |
+|-------|--------|-------|
+|IR_L |	0x82005000 |    ro|
+IR_cntrl_LC	0x82005004	|	ro|
+IR_cntrl_C	0x82005008	|	ro|
+IR_cntrl_RC	0x8200500c	|	ro|
+IR_cntrl_R	0x82005010	|	ro|
