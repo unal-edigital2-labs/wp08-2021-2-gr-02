@@ -1,4 +1,5 @@
 1. [ Ultrasonido. ](#us)
+2. [Servomotor.] (#servo)
 
 
 <a name="us"></a>
@@ -86,6 +87,9 @@ En el archivo buildSoCproject se crea el submodulo y se importan los pines de en
 ``` python
 		#ultraSound
 		SoCCore.add_csr(self,"ultraSound_cntrl")
-		self.submodules.ultraSound_cntrl = ultraSound.US(platform.request("echo"), 	platform.request("trig"))
+		self.submodules.ultraSound_cntrl = ultraSound.US(platform.request("echo"), platform.request("trig"))
 ```
+
+<a name="servo"></a>
+## Servomotor
 
