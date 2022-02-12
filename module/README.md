@@ -1,8 +1,10 @@
 1. [ Ultrasonido. ](#us)
-2. [Servomotor.] (#servo)
+
+2. [ Servomotor. ](#servo)
 
 
 <a name="us"></a>
+
 ## Ultrasonido
 
 # Mapa de memoria
@@ -93,3 +95,4 @@ En el archivo buildSoCproject se crea el submodulo y se importan los pines de en
 <a name="servo"></a>
 ## Servomotor
 
+El servomotor es el encargado de girar al ultrasonido para que este pueda hacer las lecturas del mapa, 
