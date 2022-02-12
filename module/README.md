@@ -17,7 +17,7 @@
 |done |	0x82004008 |	ro|
 
 
-El modelo utilizado es el HC-sr04, que de acuerdo con el [documento](../datasheets/HCSR04.pdf) proporcionado por el fabricante, el sensor emite ondas de sonido a 40 kHz cuando se el trigger se pone en alto por más de 10us, las ondas rebotan y vuelven al sensor cierto tiempo después, para calcular la distancia se multiplica el tiempo que tardó la onda en ir y volver por la velocidad del sonido y se divide entre 2, a continuación se presenta la máquina de estados utilizada:
+El modelo utilizado es el HC-sr04, que de acuerdo con las [especificaciones](../datasheets/HCSR04.pdf) del fabricante, el sensor emite ondas de sonido a 40 kHz cuando se el trigger se pone en alto por más de 10us, las ondas rebotan y vuelven al sensor cierto tiempo después, para calcular la distancia se multiplica el tiempo que tardó la onda en ir y volver por la velocidad del sonido y se divide entre 2, a continuación se presenta la máquina de estados utilizada:
 
 En el estado init las variables done, counter y distance se inicializan y pasa al estado pulse
 
@@ -244,3 +244,70 @@ IR_cntrl_LC	0x82005004	|	ro|
 IR_cntrl_C	0x82005008	|	ro|
 IR_cntrl_RC	0x8200500c	|	ro|
 IR_cntrl_R	0x82005010	|	ro|
+
+Los sensores infrarojos tienen un LED infrarojo y un foto diodo, cuando el LED emite luz y esta se refleja en el foto diodo, la salida del sensor marca una señal en alto, cuando hay una superficie negra no se refleja la luz y el sensor marca una señal en bajo.
+
+Al robot se le incluirían cinco sensores infrarojos, uno sobre la franja negra, dos a los lados de la franja negra para garantizar que no se desviara y otros dós en los extremos para detectar las intersecciones en las que debía detenerse, el código de verilog implementado es el siguiente en el que se implemento un registro para cada sensor.
+
+``` verilog
+
+module infraRed(input iR, 
+input iRC, 
+input iC, 
+input iLC, 
+input iL, 
+output reg L, 
+output reg LC, 
+output reg C, 
+output reg RC, 
+output reg R);
+
+always @* begin
+    L = iL;
+    LC = iLC;
+    C = iC;
+    RC = iRC;
+    R = iR;
+end
+
+endmodule
+
+```
+Para la implementación en python se llamó a cada uno de estos registros para leerlos a través del status y conocer la posicion en la que se encontraba el robot.
+
+```python
+
+from migen import *
+from migen.genlib.cdc import MultiReg
+from litex.soc.interconnect.csr import *
+from litex.soc.interconnect.csr_eventmanager import *
+
+class infra(Module, AutoCSR):
+    def __init__(self, iR, iRC, iC, iLC, iL):
+
+            self.iL = iL
+            self.iLC = iLC
+            self.iC = iC
+            self.iRC = iRC
+            self.iR = iR
+
+            self.L = CSRStatus(1)
+            self.LC = CSRStatus(1)
+            self.C = CSRStatus(1)
+            self.RC = CSRStatus(1)
+            self.R = CSRStatus(1)
+
+            self.specials += Instance("infraRed",
+                i_iL = self.iL,
+                i_iLC = self.iLC,
+                i_iC = self.iC,
+                i_iRC = self.iRC,
+                i_iR = self.iR,
+                o_L = self.L.status,
+                o_LC = self.LC.status,
+                o_C = self.C.status,
+                o_RC = self.RC.status,
+                o_R = self.R.status)
+
+```
+
