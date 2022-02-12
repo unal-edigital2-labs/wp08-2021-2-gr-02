@@ -50,3 +50,14 @@ En esta sección se muestran los periféricos utilizados, así como sus respecti
 
 En esta sección se presenta el código implementado en software para realizar el test de cada uno de los periféricos.
 
+
+## Pruebas de Funcionamiento
+
+En esta sección se presentan los videos con las pruebas realizadas a los periféricos.
+
+- [Videos de funcionamiento](https://drive.google.com/drive/u/1/folders/1J8kimReBuna83oUG3pVrOriGDKc-3Bdm?pli=1)
+
+## Complicaciones
+
+- Desde un principio se percibía que el desarrollo del proyecto era demasiado complejo por tantos archivos, tanta teória extraña que no se entendía, combinar lenguajes de programación, etc. y esto llevó a una situación de posponer y evadir el tema al punto de que la entrega final estaba bastante cerca y no se había progresado demasiado, esto sumado con el tema del semestre dividido y recortado que apretó aún más las fechas de entrega para todas las materias, fueron los aspectos que más influyeron en la falta de calidad y compromiso con la materia.
+
