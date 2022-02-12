@@ -240,10 +240,10 @@ self.submodules.wheels_cntrl = wheels.wheels(right, left)
 | Registro | Posición | tipo |
 |-------|--------|-------|
 |IR_L |	0x82005000 |    ro|
-IR_cntrl_LC	0x82005004	|	ro|
-IR_cntrl_C	0x82005008	|	ro|
-IR_cntrl_RC	0x8200500c	|	ro|
-IR_cntrl_R	0x82005010	|	ro|
+IR_LC |	0x82005004	|	ro|
+IR_C |	0x82005008	|	ro|
+IR_RC |	0x8200500c	|	ro|
+IR_R |	0x82005010	|	ro|
 
 Los sensores infrarojos tienen un LED infrarojo y un foto diodo, cuando el LED emite luz y esta se refleja en el foto diodo, la salida del sensor marca una señal en alto, cuando hay una superficie negra no se refleja la luz y el sensor marca una señal en bajo.
 
