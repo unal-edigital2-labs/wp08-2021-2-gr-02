@@ -18,7 +18,7 @@ from litex.soc.cores import gpio
 from module import rgbled
 from module import sevensegment
 from module import vgacontroller
-from module import camara
+#from module import camara
 from module import ultraSound
 from module import PWMUS
 from module import infraRed
@@ -128,36 +128,22 @@ class BaseSoC(SoCCore):
 		self.submodules.wheels_cntrl = wheels.wheels(right, left)
 
 		#UART BLUETHOOT
-		from litex.soc.cores import uart
-		self.submodules.uart1_phy = uart.UARTPHY(
-			pads     = platform.request("uart1"),
-			clk_freq = self.sys_clk_freq,
-			baudrate = 9600)
-		self.submodules.uart1 = ResetInserter()(uart.UART(self.uart1_phy,
-			tx_fifo_depth = 16,
-			rx_fifo_depth = 16))
-		self.csr.add("uart1_phy", use_loc_if_exists=True)
-		self.csr.add("uart1", use_loc_if_exists=True)
-		if hasattr(self.cpu, "interrupt"):
-			self.irq.add("uart1", use_loc_if_exists=True)
-		else:
-			self.add_constant("UART_POLLING")
+		#from litex.soc.cores import uart
+		#self.submodules.uart1_phy = uart.UARTPHY(
+		#	pads     = platform.request("uart1"),
+		#	clk_freq = self.sys_clk_freq,
+		#	baudrate = 9600)
+		#self.submodules.uart1 = ResetInserter()(uart.UART(self.uart1_phy,
+		#	tx_fifo_depth = 16,
+		#	rx_fifo_depth = 16))
+		#self.csr.add("uart1_phy", use_loc_if_exists=True)
+		#self.csr.add("uart1", use_loc_if_exists=True)
+		#if hasattr(self.cpu, "interrupt"):
+		#	self.irq.add("uart1", use_loc_if_exists=True)
+		#else:
+		#	self.add_constant("UART_POLLING")
 
 
-		#UART MP3
-		self.submodules.uart2_phy = uart.UARTPHY(
-			pads     = platform.request("uart2"),
-			clk_freq = self.sys_clk_freq,
-			baudrate = 9600)
-		self.submodules.uart2 = ResetInserter()(uart.UART(self.uart2_phy,
-			tx_fifo_depth = 16,
-			rx_fifo_depth = 16))
-		self.csr.add("uart2_phy", use_loc_if_exists=True)
-		self.csr.add("uart2", use_loc_if_exists=True)
-		if hasattr(self.cpu, "interrupt"):
-			self.irq.add("uart2", use_loc_if_exists=True)
-		else:
-			self.add_constant("UART_POLLING")
 
 # Build --------------------------------------------------------------------------------------------
 if __name__ == "__main__":

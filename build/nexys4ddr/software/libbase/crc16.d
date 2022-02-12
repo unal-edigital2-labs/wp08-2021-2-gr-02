@@ -1,4 +1,4 @@
-crc16.o: /home/camilo/Litex/litex/litex/soc/software/libbase/crc16.c \
- /home/camilo/Litex/litex/litex/soc/software/include/base/crc.h
+crc16.o: /opt/Litex/litex/litex/soc/software/libbase/crc16.c \
+ /opt/Litex/litex/litex/soc/software/libbase/crc.h
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/crc.h:
+/opt/Litex/litex/litex/soc/software/libbase/crc.h:

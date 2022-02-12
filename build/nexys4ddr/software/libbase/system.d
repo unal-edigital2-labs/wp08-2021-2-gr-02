@@ -1,25 +1,37 @@
-system.o: /home/camilo/Litex/litex/litex/soc/software/libbase/system.c \
- /home/camilo/Litex/litex/litex/soc/cores/cpu/picorv32/irq.h \
- /home/camilo/Litex/litex/litex/soc/cores/cpu/picorv32/system.h \
- /home/camilo/Escritorio/Digital_2/w07_entrega-_final-grupo11/build/nexys4ddr/software/include/generated/csr.h \
- /home/camilo/Escritorio/Digital_2/w07_entrega-_final-grupo11/build/nexys4ddr/software/include/generated/soc.h \
- /home/camilo/Litex/litex/litex/soc/software/include/base/stdint.h \
- /home/camilo/Litex/litex/litex/soc/software/include/hw/common.h \
- /home/camilo/Litex/litex/litex/soc/software/include/base/uart.h \
- /home/camilo/Escritorio/Digital_2/w07_entrega-_final-grupo11/build/nexys4ddr/software/include/generated/mem.h
+system.o: /opt/Litex/litex/litex/soc/software/libbase/system.c \
+ /opt/Litex/litex/litex/soc/cores/cpu/picorv32/irq.h \
+ /opt/Litex/litex/litex/soc/cores/cpu/picorv32/system.h \
+ /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/generated/csr.h \
+ /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/generated/soc.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdint.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_default_types.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h \
+ /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/../libc/picolibc.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_intsup.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_stdint.h \
+ /opt/Litex/litex/litex/soc/software/include/hw/common.h \
+ /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/generated/mem.h
 
-/home/camilo/Litex/litex/litex/soc/cores/cpu/picorv32/irq.h:
+/opt/Litex/litex/litex/soc/cores/cpu/picorv32/irq.h:
 
-/home/camilo/Litex/litex/litex/soc/cores/cpu/picorv32/system.h:
+/opt/Litex/litex/litex/soc/cores/cpu/picorv32/system.h:
 
-/home/camilo/Escritorio/Digital_2/w07_entrega-_final-grupo11/build/nexys4ddr/software/include/generated/csr.h:
+/home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/generated/csr.h:
 
-/home/camilo/Escritorio/Digital_2/w07_entrega-_final-grupo11/build/nexys4ddr/software/include/generated/soc.h:
+/home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/generated/soc.h:
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/stdint.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdint.h:
 
-/home/camilo/Litex/litex/litex/soc/software/include/hw/common.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_default_types.h:
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/uart.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h:
 
-/home/camilo/Escritorio/Digital_2/w07_entrega-_final-grupo11/build/nexys4ddr/software/include/generated/mem.h:
+/home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/../libc/picolibc.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_intsup.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_stdint.h:
+
+/opt/Litex/litex/litex/soc/software/include/hw/common.h:
+
+/home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/generated/mem.h:

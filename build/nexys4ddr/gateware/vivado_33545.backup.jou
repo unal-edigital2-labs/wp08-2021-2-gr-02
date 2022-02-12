@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb 11 22:52:18 2022
+# Process ID: 33545
+# Current directory: /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/gateware
+# Command line: vivado -mode batch -source nexys4ddr.tcl
+# Log file: /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/gateware/vivado.log
+# Journal file: /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/gateware/vivado.jou
+#-----------------------------------------------------------
+source nexys4ddr.tcl

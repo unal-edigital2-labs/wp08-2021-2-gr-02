@@ -1,4 +1,4 @@
-crc32.o: /home/camilo/Litex/litex/litex/soc/software/libbase/crc32.c \
- /home/camilo/Litex/litex/litex/soc/software/include/base/crc.h
+crc32.o: /opt/Litex/litex/litex/soc/software/libbase/crc32.c \
+ /opt/Litex/litex/litex/soc/software/libbase/crc.h
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/crc.h:
+/opt/Litex/litex/litex/soc/software/libbase/crc.h:

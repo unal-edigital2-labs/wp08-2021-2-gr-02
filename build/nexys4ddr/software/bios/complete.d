@@ -1,25 +1,88 @@
-complete.o: /home/camilo/Litex/litex/litex/soc/software/bios/complete.c \
- /home/camilo/Litex/litex/litex/soc/software/include/base/stdlib.h \
- /home/camilo/Litex/litex/litex/soc/software/include/base/stddef.h \
- /home/camilo/Litex/litex/litex/soc/software/include/base/stdio.h \
- /home/camilo/Litex/litex/litex/soc/software/include/base/string.h \
- /home/camilo/Litex/litex/litex/soc/software/bios/readline.h \
- /home/camilo/Litex/litex/litex/soc/software/bios/helpers.h \
- /home/camilo/Litex/litex/litex/soc/software/bios/command.h \
- /home/camilo/Litex/litex/litex/soc/software/bios/complete.h
+complete.o: /opt/Litex/litex/litex/soc/software/bios/complete.c \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdlib.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/ieeefp.h \
+ /home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/../libc/picolibc.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/_ansi.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/newlib.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/config.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h \
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/float.h \
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/cdefs.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_default_types.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/stdlib.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/alloca.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio/stdio.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/inttypes.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_intsup.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdint.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_stdint.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_locale.h \
+ /opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdarg.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_types.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_types.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/string.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/strings.h \
+ /opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/string.h \
+ /opt/Litex/litex/litex/soc/software/bios/readline.h \
+ /opt/Litex/litex/litex/soc/software/bios/helpers.h \
+ /opt/Litex/litex/litex/soc/software/bios/command.h \
+ /opt/Litex/litex/litex/soc/software/bios/complete.h
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/stdlib.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdlib.h:
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/stddef.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/ieeefp.h:
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/stdio.h:
+/home/jhon/Documentos/Edigital2/Proyecto/wp08-2021-2-gr-02/build/nexys4ddr/software/include/../libc/picolibc.h:
 
-/home/camilo/Litex/litex/litex/soc/software/include/base/string.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/_ansi.h:
 
-/home/camilo/Litex/litex/litex/soc/software/bios/readline.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/newlib.h:
 
-/home/camilo/Litex/litex/litex/soc/software/bios/helpers.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/config.h:
 
-/home/camilo/Litex/litex/litex/soc/software/bios/command.h:
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h:
 
-/home/camilo/Litex/litex/litex/soc/software/bios/complete.h:
+/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/float.h:
+
+/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/cdefs.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_default_types.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/stdlib.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/alloca.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio/stdio.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/inttypes.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_intsup.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdint.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_stdint.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_locale.h:
+
+/opt/Litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdarg.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_types.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_types.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/string.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/strings.h:
+
+/opt/Litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/string.h:
+
+/opt/Litex/litex/litex/soc/software/bios/readline.h:
+
+/opt/Litex/litex/litex/soc/software/bios/helpers.h:
+
+/opt/Litex/litex/litex/soc/software/bios/command.h:
+
+/opt/Litex/litex/litex/soc/software/bios/complete.h:
