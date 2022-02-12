@@ -95,6 +95,12 @@ En el archivo buildSoCproject se crea el submodulo y se importan los pines de en
 
 ## Servomotor
 
+# Mapa de memoria
+|Registro  | posición | Tipo |
+|----------|--------|--------|
+PWM	| 0x82004800	| rw |
+
+
 El servomotor es el encargado de girar al ultrasonido para que este pueda determinar la ubicación de las paredes, dado que los tres movimientos que debe realizar son hacia la derecha, hacia el frente y hacia la izquierda, para esto se establecen siertos valores de pwm en la [hoja de especificaciones](../datasheets/sg90_datasheet.pdf) del fabricante en la cual se indica que la señal pwm debe ser de 50 Hz y para la posicion a 0° debe tener un ancho de pulso de 1 ms, para 180° el ancho debe ser de 2 ms. De este modo, el código implementado en verilog es el siguiente
 
 ``` verilog
