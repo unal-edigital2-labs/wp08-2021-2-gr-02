@@ -24,12 +24,12 @@ A continuación se muestra la arquitectura básica que tendrá el SoC del proyec
 |display |	0x82001800 |
 |ledRGB_1 |	0x82002000 |
 |ledRGB_2 |	0x82002800 |
-|vga_cntrl |	0x82003000 |
-|i2c_cntrl |	0x82003800 |
-|ultraSound_cntrl |	0x82004000 |
-|PWMUS_cntrl |	0x82004800 |
-|IR_cntrl |	0x82005000 |
-|wheels_cntrl |	0x82005800 |
+|vga |	0x82003000 |
+|i2c |	0x82003800 |
+|ultraSonido|	0x82004000 |
+|PWM |	0x82004800 |
+|IR |	0x82005000 |
+|Ruedas |	0x82005800 |
 |ctrl |	0x82006000 |
 |timer0 |	0x82006800 |
 |uart |	0x82007000 |
@@ -41,4 +41,6 @@ A continuación se muestra la arquitectura básica que tendrá el SoC del proyec
 - Ultrasonido
 - Infrarojos
 - Motores
+
+## [Firmware](https://github.com/unal-edigital2-labs/wp08-2021-2-gr-02/tree/main/firmware)
 
