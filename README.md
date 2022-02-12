@@ -8,6 +8,8 @@
 
 En este trabajo se presenta un proyecto el cual tiene como objetivo implementar un robot cartógrafo que recorre un laberinto e identifica algunas características de la pista y responde a dichas características como la elección de tomar un camino u otro dependiendo de las posibilidades y el procesamiento que ha realizado a lo largo del recorrido; determinar si en una pared se encuentra una figura de alguna forma y color específicos; recibir y transmitir datos mediante bluetooth; medir los niveles de temperatura y humedad.
 
+[![Captura-de-pantalla-de-2022-02-12-03-23-51.png](https://i.postimg.cc/YqQGLWYx/Captura-de-pantalla-de-2022-02-12-03-23-51.png)](https://postimg.cc/HVssfjSJ)
+
 A continuación se muestra la arquitectura básica que tendrá el SoC del proyecto .
 
 ## SoC
